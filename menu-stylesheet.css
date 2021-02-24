@@ -52,6 +52,7 @@ body {
     display: flex;
     font-size: 24px;
     width: 50%;
+    cursor: pointer;
 }
 .container_title_bloc {
     width: 90%;
@@ -108,22 +109,20 @@ body {
 .menu_title .fa-heart {
     font-size: 27px;
     cursor: pointer;
-    position: relative;
-    transition: 2s;
     transform: scale(50px);
+    transition: 1s;
+
     width: 18%;
-    display: contents;
 }
 .menu_title .fa-heart:hover {
-    font-weight: bold;
+    font-weight: bolder;
     color: #9356dc;
     opacity: 1;
-    font-size: 29px;
+    font-size: 27px;
     cursor: pointer;
-    position: absolute;
-    display: contents;
-    transform: scale(110px);
-    transition: 2s ease-in;
+
+    transform: scale(50px);
+    transition: 1s ease-in;
     width: 18%;
 }
 
@@ -258,6 +257,7 @@ body {
     align-items: center;
     font-family: "robotoregular";
     font-weight: bold;
+    bottom: -13px;
 }
 .price__entrance2 {
     display: flex;
@@ -271,6 +271,7 @@ body {
     align-items: center;
     font-family: "robotoregular";
     font-weight: bold;
+    bottom: -13px;
 }
 .price__entrance3 {
     display: flex;
@@ -284,6 +285,7 @@ body {
     align-items: center;
     font-family: "robotoregular";
     font-weight: bold;
+    bottom: -13px;
 }
 
 /*container_entrance*/
@@ -469,7 +471,7 @@ body {
     align-content: flex-start;
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
-    padding-left: 6px;
+    padding-left: 18px;
     animation-name: opacity1-plate;
     animation-duration: 1s;
     transform: translateY(-6px);
@@ -522,32 +524,35 @@ body {
 
 .content_plate1 h4 {
     width: 65%;
-    height: 0%;
+    height: 9%;
     display: flex;
     justify-content: flex-start;
     margin-top: 19px;
 }
 
-.content_plate1 p {
+.content__dish {
     font-size: 15px;
     font-weight: 100;
-    margin-top: 1px;
+    width: 10%;
+    height: 10px;
     display: contents;
     font-family: "robotothin";
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: "...";
+    white-space: nowrap;
 }
 .content_plate2 h4 {
     width: 65%;
-    height: 0%;
+    height: 9%;
     display: flex;
     justify-content: flex-start;
-    margin-top: 19px;
 }
 
 .content_plate2 p {
     font-size: 15px;
     font-weight: 100;
-    margin-top: 1px;
+
     display: contents;
     font-family: "robotothin";
     font-weight: bold;
@@ -555,7 +560,7 @@ body {
 
 .content_plate3 h4 {
     width: 65%;
-    height: 0%;
+    height: 9%;
     display: flex;
     justify-content: flex-start;
     margin-top: 19px;
@@ -564,7 +569,7 @@ body {
 .content_plate3 p {
     font-size: 15px;
     font-weight: 100;
-    margin-top: 1px;
+
     display: contents;
     font-family: "robotothin";
     font-weight: bold;
@@ -581,6 +586,9 @@ body {
     transform: translateX(74px);
     transition: 1s;
     align-items: center;
+    font-family: "robotoregular";
+    font-weight: bold;
+    bottom: -13px;
 }
 
 .price__plate2 {
@@ -593,6 +601,9 @@ body {
     transform: translateX(74px);
     transition: 1s;
     align-items: center;
+    font-family: "robotoregular";
+    font-weight: bold;
+    bottom: -13px;
 }
 
 .price__plate3 {
@@ -605,6 +616,9 @@ body {
     transform: translateX(74px);
     transition: 1s;
     align-items: center;
+    font-family: "robotoregular";
+    font-weight: bold;
+    bottom: -13px;
 }
 
 /*anim-content_plate */
@@ -759,7 +773,7 @@ body {
 .content_dessert1 h4 {
     font-weight: bold;
     width: 65%;
-    height: 0%;
+    height: 9%;
     display: flex;
     justify-content: flex-start;
     margin-top: 19px;
@@ -797,6 +811,9 @@ body {
     transform: translateX(74px);
     transition: 1s;
     align-items: center;
+    font-family: "robotoregular";
+    font-weight: bold;
+    bottom: -13px;
 }
 
 .content_dessert2 {
@@ -823,7 +840,7 @@ body {
 .content_dessert2 h4 {
     font-weight: bold;
     width: 65%;
-    height: 0%;
+    height: 9%;
     display: flex;
     justify-content: flex-start;
     margin-top: 19px;
@@ -861,6 +878,9 @@ body {
     transform: translateX(74px);
     transition: 1s;
     align-items: center;
+    font-family: "robotoregular";
+    font-weight: bold;
+    bottom: -13px;
 }
 
 .content_dessert3 {
@@ -887,7 +907,7 @@ body {
 .content_dessert3 h4 {
     font-weight: bold;
     width: 65%;
-    height: 0%;
+    height: 9%;
     display: flex;
     justify-content: flex-start;
     margin-top: 19px;
@@ -925,6 +945,9 @@ body {
     transform: translateX(74px);
     transition: 1s;
     align-items: center;
+    font-family: "robotoregular";
+    font-weight: bold;
+    bottom: -13px;
 }
 /*animation*/
 .content_dessert1:hover .price__dessert1 {

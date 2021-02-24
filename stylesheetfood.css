@@ -234,20 +234,31 @@ img {
 
 .select_eatary {
     width: 100%;
-    height: 230px;
-    margin-bottom: 37px;
+    height: auto;
+    width: 358px;
+    margin: auto;
+    cursor: pointer;
 }
 
 .comment_rest {
     padding-left: 17px;
+    cursor: pointer;
 }
 
 .comment_rest .far {
-     
     font-size: 27px;
     font-weight: lighter;
     opacity: 0.4;
 }
+
+.comment_rest .far:hover {
+    font-size: 27px;
+    font-weight: lighter;
+    opacity: 0.4;
+    font-weight: bold;
+    color: #ba63db;
+    transition: 1500ms;
+    transform: scale3d(20px);
 }
 
 .content_fig {
@@ -264,6 +275,7 @@ img {
     height: 247px;
     width: 355px;
     margin: auto;
+    text-decoration: none;
 }
 
 figcaption {
@@ -281,7 +293,6 @@ figcaption {
     object-fit: cover;
     height: 174px;
     width: 355px;
-   
 }
 
 .new_sticker {
@@ -293,21 +304,21 @@ figcaption {
     align-items: center;
     position: relative;
     top: 56px;
-    left: 290px;
+    transform: translateX(273px);
     color: #44b095;
-    
-    
-    
-    
 }
 
 .first_bloc {
-    height: 632px;
-    margin-top: -48px;
+    height: 647px;
+    margin-top: -24px;
 }
+
 .second_bloc {
-    height: 632px;
-    margin-top: -56px;
+    height: 562px;
+    margin-top: -79px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .comment_rest {
     padding-left: 10px;
