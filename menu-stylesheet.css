@@ -171,7 +171,7 @@ body {
 }
 
 .anim-content_entrance1 {
-    height: 80px;
+    height: 70px;
     width: 65px;
     background-color: #99e2d0;
     display: flex;
@@ -183,7 +183,7 @@ body {
     right: 0;
 }
 .anim-content_entrance2 {
-    height: 80px;
+    height: 70px;
     width: 65px;
     background-color: #99e2d0;
     display: flex;
@@ -195,7 +195,7 @@ body {
     right: 0;
 }
 .anim-content_entrance3 {
-    height: 80px;
+    height: 70px;
     width: 65px;
     background-color: #99e2d0;
     display: flex;
@@ -247,45 +247,44 @@ body {
 
 .price__entrance1 {
     display: flex;
-    width: 72%;
+    width: 70px;
     height: 70px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    transform: translateX(74px);
+    transform: translateX(97px);
     transition: 1s;
-    align-items: center;
+    align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
-    bottom: -13px;
+    justify-content: center;
+    padding: 5px;
+    line-height: 40px;
 }
+
 .price__entrance2 {
     display: flex;
-    width: 72%;
+    width: 70px;
     height: 70px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    transform: translateX(74px);
+    transform: translateX(97px);
     transition: 1s;
-    align-items: center;
+    align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
-    bottom: -13px;
+    justify-content: center;
+    padding: 5px;
+    line-height: 40px;
 }
+
 .price__entrance3 {
     display: flex;
-    width: 72%;
+    width: 70px;
     height: 70px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    transform: translateX(74px);
+    transform: translateX(97px);
     transition: 1s;
-    align-items: center;
+    align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
-    bottom: -13px;
+    justify-content: center;
+    padding: 5px;
+    line-height: 40px;
 }
 
 /*container_entrance*/
@@ -300,14 +299,13 @@ body {
     align-content: flex-start;
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
-    padding-left: 6px;
-
+    padding-left: 15px;
     transform: translateY(-8px);
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
     overflow: hidden;
-    animation: opacity1-menu 1s;
+    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity1-menu;
 }
 .content_entrance2 {
     width: 100%;
@@ -319,13 +317,13 @@ body {
     align-content: flex-start;
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
-    padding-left: 6px;
+    padding-left: 15px;
     transform: translateY(4px);
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
     overflow: hidden;
-    animation: opacity2-menu 1500ms;
+    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity2-menu;
 }
 .content_entrance3 {
     width: 100%;
@@ -337,116 +335,116 @@ body {
     align-content: flex-start;
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
-    padding-left: 6px;
+    padding-left: 15px;
     transform: translateY(19px);
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
     overflow: hidden;
-    animation: opacity3-menu 2s;
+    animation: opacity3-menu cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
+
+    transition: ease;
 }
 
 /* animation-menu */
 
 @keyframes opacity1-menu {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(40px);
-        animation-duration: 600ms;
-        animation-delay: 300ms;
+        transition-delay: 300ms;
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    75% {
+        opacity: 0.5;
+        transform: translateY(0px);
     }
 
-    to {
-        animation-duration: 600ms;
+    100% {
         opacity: 1;
         transform: translateY(-8px);
     }
 }
 @keyframes opacity2-menu {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(40px);
-        animation-delay: 600ms;
+        transition-delay: 600ms;
     }
-    to {
+    50% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    75% {
+        opacity: 0.5;
+        transform: translateY(8px);
+    }
+
+    100% {
         opacity: 1;
-        transform: translateY(4px);
-        animation-duration: 600ms;
+        transform: translateY(5px);
     }
 }
 @keyframes opacity3-menu {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(40px);
-        animation-delay: 900ms;
+        transition-delay: 900ms;
     }
-    to {
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
         opacity: 1;
         transform: translateY(19px);
-
-        animation-duration: 1s;
-        animation-delay: 600ms;
     }
 }
-
-.content_entrance1 p {
+.content__dish {
     width: 300px;
+    height: 26px;
     font-size: 17px;
     font-weight: 100;
-    width: 200px;
-    display: contents;
+    display: inline-block;
     font-family: "robotothin";
-    font-weight: bold;
-    text-overflow: ellipsis;
 }
+
+.content_plate1:hover .content__dish {
+    font-family: "robotothin";
+    overflow: hidden;
+    text-overflow: ellipsis("...");
+    white-space: nowrap;
+    display: inline-block;
+}
+
 .content_entrance1 h4 {
-    width: 65%;
-    height: 9%;
+    width: 300px;
+    height: 8px;
     display: flex;
     justify-content: flex-start;
-    margin-top: 19px;
-    font-size: 17px;
-}
-.content_entrance2 p {
-    width: 300px;
-    font-size: 17px;
-    font-weight: 100;
-    width: 200px;
-    display: contents;
-    font-family: "robotothin";
-    font-weight: bold;
-    text-overflow: ellipsis;
+    margin: 19px 0px 0px;
 }
 
 .content_entrance2 h4 {
-    width: 65%;
-
+    width: 300px;
+    height: 8px;
     display: flex;
     justify-content: flex-start;
-    margin-top: 19px;
-    font-size: 17px;
-    height: 9%;
-}
-
-.content_entrance3 p {
-    width: 300px;
-    font-size: 17px;
-    font-weight: 100;
-    width: 200px;
-    display: contents;
-    font-family: "robotothin";
-    font-weight: bold;
-    text-overflow: ellipsis;
+    margin: 19px 0px 0px;
 }
 
 .content_entrance3 h4 {
-    width: 65%;
-
+    width: 300px;
+    height: 8px;
     display: flex;
     justify-content: flex-start;
-    margin-top: 19px;
-    font-size: 17px;
-    height: 9%;
+    margin: 19px 0px 0px;
 }
 
 /*bloc_plate */
@@ -471,11 +469,11 @@ body {
     align-content: flex-start;
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
-    padding-left: 18px;
-    animation-name: opacity1-plate;
+    padding-left: 15px;
+    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity1-plate;
     animation-duration: 1s;
     transform: translateY(-6px);
-    transition: linear;
+    transition: ease;
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -491,11 +489,11 @@ body {
     align-content: flex-start;
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
-    padding-left: 6px;
-    animation-name: opacity2-plate;
-    animation-duration: 1s;
+    padding-left: 15px;
+    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity2-plate;
+
     transform: translateY(10px);
-    transition: linear;
+    transition: ease;
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -511,11 +509,11 @@ body {
     align-content: flex-start;
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
-    padding-left: 6px;
-    animation-name: opacity3-plate;
-    animation-duration: 1s;
+    padding-left: 15px;
+    animation: opacity3-plate cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
+
     transform: translateY(25px);
-    transition: linear;
+
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -523,108 +521,77 @@ body {
 }
 
 .content_plate1 h4 {
-    width: 65%;
-    height: 9%;
+    width: 300px;
+    height: 8px;
     display: flex;
     justify-content: flex-start;
-    margin-top: 19px;
+    margin: 19px 0px 0px;
 }
 
-.content__dish {
-    font-size: 15px;
-    font-weight: 100;
-    width: 10%;
-    height: 10px;
-    display: contents;
-    font-family: "robotothin";
-    font-weight: bold;
-    overflow: hidden;
-    text-overflow: "...";
-    white-space: nowrap;
-}
 .content_plate2 h4 {
-    width: 65%;
-    height: 9%;
+    width: 300px;
+    height: 8px;
     display: flex;
     justify-content: flex-start;
-}
-
-.content_plate2 p {
-    font-size: 15px;
-    font-weight: 100;
-
-    display: contents;
-    font-family: "robotothin";
-    font-weight: bold;
+    margin: 19px 0px 0px;
 }
 
 .content_plate3 h4 {
-    width: 65%;
-    height: 9%;
+    width: 300px;
+    height: 8px;
     display: flex;
     justify-content: flex-start;
-    margin-top: 19px;
+    margin: 19px 0px 0px;
 }
 
-.content_plate3 p {
-    font-size: 15px;
-    font-weight: 100;
-
-    display: contents;
-    font-family: "robotothin";
-    font-weight: bold;
-}
 /*price__plate */
 
 .price__plate1 {
     display: flex;
-    width: 72%;
+    width: 70px;
     height: 70px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    transform: translateX(74px);
+    transform: translateX(97px);
     transition: 1s;
-    align-items: center;
+    align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
-    bottom: -13px;
+    justify-content: center;
+    padding: 5px;
+    line-height: 40px;
 }
 
 .price__plate2 {
     display: flex;
-    width: 72%;
+    width: 70px;
     height: 70px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    transform: translateX(74px);
+    transform: translateX(97px);
     transition: 1s;
-    align-items: center;
+    align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
-    bottom: -13px;
+    justify-content: center;
+    padding: 5px;
+    line-height: 40px;
 }
 
 .price__plate3 {
     display: flex;
-    width: 72%;
+    width: 70px;
     height: 70px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    transform: translateX(74px);
+    transform: translateX(97px);
     transition: 1s;
-    align-items: center;
+    align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
-    bottom: -13px;
+    justify-content: center;
+    padding: 5px;
+    line-height: 40px;
 }
 
 /*anim-content_plate */
 
 .anim-content_plate1 {
-    height: 80px;
+    height: 70px;
     width: 65px;
     background-color: #99e2d0;
     display: flex;
@@ -637,7 +604,7 @@ body {
 }
 
 .anim-content_plate2 {
-    height: 80px;
+    height: 70px;
     width: 65px;
     background-color: #99e2d0;
     display: flex;
@@ -650,7 +617,7 @@ body {
 }
 
 .anim-content_plate3 {
-    height: 80px;
+    height: 70px;
     width: 65px;
     background-color: #99e2d0;
     display: flex;
@@ -703,37 +670,48 @@ body {
 /* animation-menu */
 
 @keyframes opacity1-plate {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(40px);
+        transition-delay: 300ms;
+    }
+    50% {
+        opacity: 0;
     }
 
-    to {
+    100% {
         opacity: 1;
         transform: translateY(-6px);
-        transition-delay: 1s;
     }
 }
 @keyframes opacity2-plate {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(40px);
+        transition-delay: 600ms;
     }
-    to {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
         transform: translateY(10px);
-        transition-delay: 1s;
     }
 }
 @keyframes opacity3-plate {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(40px);
+        transition-delay: 900ms;
     }
-    to {
+
+    50% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
         transform: translateY(25px);
-        transition-delay: 1s;
     }
 }
 
@@ -759,11 +737,11 @@ body {
     align-content: flex-start;
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
-    padding-left: 6px;
-    animation-name: opacity1-dessert;
-    animation-duration: 1s;
+    padding-left: 15px;
+    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity1-dessert;
+
     transform: translateY(-10px);
-    transition: linear;
+
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -771,25 +749,15 @@ body {
 }
 
 .content_dessert1 h4 {
-    font-weight: bold;
-    width: 65%;
-    height: 9%;
+    width: 300px;
+    height: 8px;
     display: flex;
     justify-content: flex-start;
-    margin-top: 19px;
-}
-
-.content_dessert1 p {
-    font-size: 15px;
-    font-weight: 100;
-    margin-top: 1px;
-    display: contents;
-    font-family: "robotothin";
-    font-weight: bold;
+    margin: 19px 0px 0px;
 }
 
 .anim-content_dessert1 {
-    height: 80px;
+    height: 70px;
     width: 65px;
     background-color: #99e2d0;
     display: flex;
@@ -803,17 +771,16 @@ body {
 
 .price__dessert1 {
     display: flex;
-    width: 72%;
+    width: 70px;
     height: 70px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    transform: translateX(74px);
+    transform: translateX(97px);
     transition: 1s;
-    align-items: center;
+    align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
-    bottom: -13px;
+    justify-content: center;
+    padding: 5px;
+    line-height: 40px;
 }
 
 .content_dessert2 {
@@ -826,11 +793,11 @@ body {
     align-content: flex-start;
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
-    padding-left: 6px;
-    animation-name: opacity2-plate;
-    animation-duration: 1s;
+    padding-left: 15px;
+    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity2-dessert;
+
     transform: translateY(6px);
-    transition: linear;
+
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -838,25 +805,15 @@ body {
 }
 
 .content_dessert2 h4 {
-    font-weight: bold;
-    width: 65%;
-    height: 9%;
+    width: 300px;
+    height: 8px;
     display: flex;
     justify-content: flex-start;
-    margin-top: 19px;
-}
-
-.content_dessert2 p {
-    font-size: 15px;
-    font-weight: 100;
-    margin-top: 1px;
-    display: contents;
-    font-family: "robotothin";
-    font-weight: bold;
+    margin: 19px 0px 0px;
 }
 
 .anim-content_dessert2 {
-    height: 80px;
+    height: 70px;
     width: 65px;
     background-color: #99e2d0;
     display: flex;
@@ -870,17 +827,16 @@ body {
 
 .price__dessert2 {
     display: flex;
-    width: 72%;
+    width: 70px;
     height: 70px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    transform: translateX(74px);
+    transform: translateX(97px);
     transition: 1s;
-    align-items: center;
+    align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
-    bottom: -13px;
+    justify-content: center;
+    padding: 5px;
+    line-height: 40px;
 }
 
 .content_dessert3 {
@@ -893,11 +849,11 @@ body {
     align-content: flex-start;
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
-    padding-left: 6px;
-    animation-name: opacity3-plate;
-    animation-duration: 1s;
+    padding-left: 15px;
+    animation: opacity3-dessert cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
+
     transform: translateY(21px);
-    transition: linear;
+
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -905,25 +861,15 @@ body {
 }
 
 .content_dessert3 h4 {
-    font-weight: bold;
-    width: 65%;
-    height: 9%;
+    width: 300px;
+    height: 8px;
     display: flex;
     justify-content: flex-start;
-    margin-top: 19px;
-}
-
-.content_dessert3 p {
-    font-size: 15px;
-    font-weight: 100;
-    margin-top: 1px;
-    display: contents;
-    font-family: "robotothin";
-    font-weight: bold;
+    margin: 19px 0px 0px;
 }
 
 .anim-content_dessert3 {
-    height: 80px;
+    height: 70px;
     width: 65px;
     background-color: #99e2d0;
     display: flex;
@@ -937,17 +883,16 @@ body {
 
 .price__dessert3 {
     display: flex;
-    width: 72%;
+    width: 70px;
     height: 70px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    transform: translateX(74px);
+    transform: translateX(97px);
     transition: 1s;
-    align-items: center;
+    align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
-    bottom: -13px;
+    justify-content: center;
+    padding: 5px;
+    line-height: 40px;
 }
 /*animation*/
 .content_dessert1:hover .price__dessert1 {
@@ -989,33 +934,48 @@ body {
 /* animation-menu */
 
 @keyframes opacity1-dessert {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(40px);
     }
 
-    to {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
         transform: translateY(-8px);
-        transition-delay: 1s;
+        transition-delay: 300ms;
     }
 }
 @keyframes opacity2-dessert {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(40px);
+        transition-delay: 600ms;
     }
-    to {
+
+    50% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
         transform: translateY(6px);
     }
 }
 @keyframes opacity3-dessert {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(40px);
+        transition-delay: 900ms;
     }
-    to {
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
         transform: translateY(21px);
     }
