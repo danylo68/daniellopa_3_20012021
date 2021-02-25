@@ -111,10 +111,10 @@ img {
     box-shadow: 5px 7px 11px 5px lightgrey;
     margin: auto;
     align-items: center;
+    justify-content: center;
 }
 .explore_eat p {
     color: white;
-    padding-left: 30px;
 }
 
 .bloc_operation {
