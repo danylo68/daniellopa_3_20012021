@@ -28,6 +28,85 @@ body {
     margin: 0%;
     width: 100%;
 }
+/*SPINNER-LOADER*/
+.content__loader {
+    height: 100%;
+    width: 100%;
+    animation: start-spinner 3s forwards;
+    position: fixed;
+    z-index: 1;
+    background-color: #99e2d0;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 15px solid transparent;
+    border-top-color: #9356dc;
+    border-bottom-color: #9356dc;
+    border-radius: 50%;
+    animation: loading 2500ms ease infinite;
+    position: absolute;
+    bottom: 54%;
+}
+
+.load-spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.load-spin::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border: 15px solid transparent;
+    border-top-color: #ff79da;
+    border-bottom-color: #ff79da;
+    border-radius: 50%;
+    animation: loading-reverse 2500ms linear infinite;
+    position: absolute;
+    bottom: 52%;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading-reverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes start-spinner {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+        visibility: hidden;
+        animation-duration: 200ms;
+    }
+}
 
 .bloc_page {
     width: 100%;
