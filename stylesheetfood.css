@@ -29,6 +29,20 @@ body {
     width: 100%;
 }
 /*SPINNER-LOADER*/
+
+.title-spinner {
+    font-family: "shrikhandregular";
+    font-size: 54px;
+    background: linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    height: 259px;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
 .content__loader {
     height: 100%;
     width: 100%;
@@ -323,21 +337,43 @@ img {
     padding-left: 17px;
     cursor: pointer;
 }
-
-.comment_rest .far {
+/*animation-coeur-icon*/
+.heart-lite {
     font-size: 27px;
-    font-weight: lighter;
-    opacity: 0.4;
+    cursor: pointer;
+    width: 6%;
+    position: absolute;
+    display: block;
+    opacity: 1;
+
+    transition: 1s;
+    left: 65%;
 }
 
-.comment_rest .far:hover {
+.heart-purple {
     font-size: 27px;
-    font-weight: lighter;
-    opacity: 0.4;
-    font-weight: bold;
-    color: #ba63db;
-    transition: 1500ms;
-    transform: scale3d(20px);
+    cursor: pointer;
+    width: 6%;
+    position: absolute;
+    transition: 1s;
+    opacity: 0;
+    z-index: 1;
+    transform: scale(1);
+    background: linear-gradient(#ff79da, #9356dc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    left: 65%;
+}
+.heart-purple:hover {
+    font-size: 27px;
+    cursor: pointer;
+    width: 6%;
+    transform: scale(1);
+    transition: 1s;
+    opacity: 1;
+    z-index: 2;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .content_fig {
