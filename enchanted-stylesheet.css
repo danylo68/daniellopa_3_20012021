@@ -51,7 +51,7 @@ body {
 .icon__back {
     display: flex;
     font-size: 24px;
-    width: 50%;
+    width: 7%;
     cursor: pointer;
 }
 .container_title_bloc {
@@ -72,6 +72,7 @@ body {
     margin-top: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /*header_photo*/
@@ -188,31 +189,7 @@ body {
     }
 }
 
-.anim-content_entrance1 {
-    height: 70px;
-    width: 65px;
-    background-color: #99e2d0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transition: 1s;
-    transform: translateX(65px);
-    right: 0;
-}
-.anim-content_entrance2 {
-    height: 70px;
-    width: 65px;
-    background-color: #99e2d0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transition: 1s;
-    transform: translateX(65px);
-    right: 0;
-}
-.anim-content_entrance3 {
+.anim-content_entrance {
     height: 70px;
     width: 65px;
     background-color: #99e2d0;
@@ -226,11 +203,11 @@ body {
 }
 
 /*animation*/
-.content_entrance1:hover .price__entrance1 {
+.content_entrance1:hover .price__entrance {
     transform: translateX(0px);
     transition: 1s;
 }
-.content_entrance1:hover .anim-content_entrance1 {
+.content_entrance1:hover .anim-content_entrance {
     transform: translateX(0px);
     transition-duration: 600ms;
 }
@@ -238,11 +215,11 @@ body {
     transform: rotate(360deg);
 }
 
-.content_entrance2:hover .price__entrance2 {
+.content_entrance2:hover .price__entrance {
     transform: translateX(0px);
     transition: 1s;
 }
-.content_entrance2:hover .anim-content_entrance2 {
+.content_entrance2:hover .anim-content_entrance {
     transform: translateX(0px);
     transition-duration: 600ms;
 }
@@ -250,11 +227,11 @@ body {
     transform: rotate(360deg);
 }
 
-.content_entrance3:hover .price__entrance3 {
+.content_entrance3:hover .price__entrance {
     transform: translateX(0px);
     transition: 1s;
 }
-.content_entrance3:hover .anim-content_entrance3 {
+.content_entrance3:hover .anim-content_entrance {
     transform: translateX(0px);
     transition-duration: 600ms;
 }
@@ -285,37 +262,7 @@ body {
     transition: width 1s;
 }
 
-.price__entrance1 {
-    display: flex;
-    width: 20%;
-    height: 72px;
-    transform: translateX(70px);
-    transition: 1s;
-    align-items: flex-end;
-    font-family: "robotoregular";
-    font-weight: bold;
-    justify-content: center;
-    line-height: 56px;
-    position: absolute;
-    left: 61%;
-}
-
-.price__entrance2 {
-    display: flex;
-    width: 20%;
-    height: 72px;
-    transform: translateX(70px);
-    transition: 1s;
-    align-items: flex-end;
-    font-family: "robotoregular";
-    font-weight: bold;
-    justify-content: center;
-    line-height: 56px;
-    position: absolute;
-    left: 61%;
-}
-
-.price__entrance3 {
+.price__entrance {
     display: flex;
     width: 20%;
     height: 72px;
@@ -573,9 +520,7 @@ body {
     box-shadow: 0px 9px 16px 0px lightgray;
     padding-left: 15px;
     animation: opacity3-plate cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
-
     transform: translateY(25px);
-
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -608,37 +553,7 @@ body {
 
 /*price__plate */
 
-.price__plate1 {
-    display: flex;
-    width: 20%;
-    height: 72px;
-    transform: translateX(70px);
-    transition: 1s;
-    align-items: flex-end;
-    font-family: "robotoregular";
-    font-weight: bold;
-    justify-content: center;
-    line-height: 56px;
-    position: absolute;
-    left: 61%;
-}
-
-.price__plate2 {
-    display: flex;
-    width: 20%;
-    height: 72px;
-    transform: translateX(70px);
-    transition: 1s;
-    align-items: flex-end;
-    font-family: "robotoregular";
-    font-weight: bold;
-    justify-content: center;
-    line-height: 56px;
-    position: absolute;
-    left: 61%;
-}
-
-.price__plate3 {
+.price__plate {
     display: flex;
     width: 20%;
     height: 72px;
@@ -655,33 +570,7 @@ body {
 
 /*anim-content_plate */
 
-.anim-content_plate1 {
-    height: 70px;
-    width: 65px;
-    background-color: #99e2d0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transition: 1s;
-    transform: translateX(65px);
-    right: 0;
-}
-
-.anim-content_plate2 {
-    height: 70px;
-    width: 65px;
-    background-color: #99e2d0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transition: 1s;
-    transform: translateX(65px);
-    right: 0;
-}
-
-.anim-content_plate3 {
+.anim-content_plate {
     height: 70px;
     width: 65px;
     background-color: #99e2d0;
@@ -695,11 +584,11 @@ body {
 }
 
 /*animation*/
-.content_plate1:hover .price__plate1 {
+.content_plate1:hover .price__plate {
     transform: translateX(0px);
     transition: 1s;
 }
-.content_plate1:hover .anim-content_plate1 {
+.content_plate1:hover .anim-content_plate {
     transform: translateX(0px);
     transition-duration: 600ms;
 }
@@ -707,11 +596,11 @@ body {
     transform: rotate(360deg);
 }
 
-.content_plate2:hover .price__plate2 {
+.content_plate2:hover .price__plate {
     transform: translateX(0px);
     transition: 1s;
 }
-.content_plate2:hover .anim-content_plate2 {
+.content_plate2:hover .anim-content_plate {
     transform: translateX(0px);
     transition-duration: 600ms;
 }
@@ -719,11 +608,11 @@ body {
     transform: rotate(360deg);
 }
 
-.content_plate3:hover .price__plate3 {
+.content_plate3:hover .price__plate {
     transform: translateX(0px);
     transition: 1s;
 }
-.content_plate3:hover .anim-content_plate3 {
+.content_plate3:hover .anim-content_plate {
     transform: translateX(0px);
     transition-duration: 600ms;
 }
@@ -819,7 +708,7 @@ body {
     margin: 19px 0px 0px;
 }
 
-.anim-content_dessert1 {
+.anim-content_dessert {
     height: 70px;
     width: 65px;
     background-color: #99e2d0;
@@ -832,7 +721,7 @@ body {
     right: 0;
 }
 
-.price__dessert1 {
+.price__dessert {
     display: flex;
     width: 20%;
     height: 72px;
@@ -859,9 +748,7 @@ body {
     box-shadow: 0px 9px 16px 0px lightgray;
     padding-left: 15px;
     animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity2-dessert;
-
     transform: translateY(6px);
-
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -876,34 +763,6 @@ body {
     margin: 19px 0px 0px;
 }
 
-.anim-content_dessert2 {
-    height: 70px;
-    width: 65px;
-    background-color: #99e2d0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transition: 1s;
-    transform: translateX(65px);
-    right: 0;
-}
-
-.price__dessert2 {
-    display: flex;
-    width: 20%;
-    height: 72px;
-    transform: translateX(70px);
-    transition: 1s;
-    align-items: flex-end;
-    font-family: "robotoregular";
-    font-weight: bold;
-    justify-content: center;
-    line-height: 56px;
-    position: absolute;
-    left: 61%;
-}
-
 .content_dessert3 {
     width: 100%;
     height: 70px;
@@ -916,9 +775,7 @@ body {
     box-shadow: 0px 9px 16px 0px lightgray;
     padding-left: 15px;
     animation: opacity3-dessert cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
-
     transform: translateY(21px);
-
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -933,39 +790,12 @@ body {
     margin: 19px 0px 0px;
 }
 
-.anim-content_dessert3 {
-    height: 70px;
-    width: 65px;
-    background-color: #99e2d0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transition: 1s;
-    transform: translateX(65px);
-    right: 0;
-}
-
-.price__dessert3 {
-    display: flex;
-    width: 20%;
-    height: 72px;
-    transform: translateX(70px);
-    transition: 1s;
-    align-items: flex-end;
-    font-family: "robotoregular";
-    font-weight: bold;
-    justify-content: center;
-    line-height: 56px;
-    position: absolute;
-    left: 61%;
-}
 /*animation*/
-.content_dessert1:hover .price__dessert1 {
+.content_dessert1:hover .price__dessert {
     transform: translateX(0px);
     transition: 1s;
 }
-.content_dessert1:hover .anim-content_dessert1 {
+.content_dessert1:hover .anim-content_dessert {
     transform: translateX(0px);
     transition-duration: 600ms;
 }
@@ -973,11 +803,11 @@ body {
     transform: rotate(360deg);
 }
 
-.content_dessert2:hover .price__dessert2 {
+.content_dessert2:hover .price__dessert {
     transform: translateX(0px);
     transition: 1s;
 }
-.content_dessert2:hover .anim-content_dessert2 {
+.content_dessert2:hover .anim-content_dessert {
     transform: translateX(0px);
     transition-duration: 600ms;
 }
@@ -985,11 +815,11 @@ body {
     transform: rotate(360deg);
 }
 
-.content_dessert3:hover .price__dessert3 {
+.content_dessert3:hover .price__dessert {
     transform: translateX(0px);
     transition: 1s;
 }
-.content_dessert3:hover .anim-content_dessert3 {
+.content_dessert3:hover .anim-content_dessert {
     transform: translateX(0px);
     transition-duration: 600ms;
 }
@@ -1090,6 +920,22 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    transition: 300ms;
+}
+.content_order:hover {
+    cursor: pointer;
+    background: linear-gradient(#ff79da, #9356dc);
+    border-radius: 30px;
+    width: 50%;
+    height: 51px;
+    box-shadow: 5px 7px 11px 5px lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 300ms;
+    transform: scale(1.02);
+    opacity: 0.8;
 }
 
 /*footer_container */
