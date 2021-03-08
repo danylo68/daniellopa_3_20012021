@@ -106,24 +106,42 @@ body {
     width: 79%;
 }
 
-.menu_title .fa-heart {
+.heart-lite {
     font-size: 27px;
     cursor: pointer;
-    transform: scale(50px);
-    transition: 1s;
-
-    width: 18%;
-}
-.menu_title .fa-heart:hover {
-    font-weight: bolder;
-    color: #9356dc;
+    width: 6%;
+    position: absolute;
+    display: block;
     opacity: 1;
+    z-index: 1;
+    transition: 1s;
+    left: 80%;
+}
+
+.heart-purple {
     font-size: 27px;
     cursor: pointer;
-
-    transform: scale(50px);
-    transition: 1s ease-in;
-    width: 18%;
+    width: 6%;
+    position: absolute;
+    transition: 1s;
+    opacity: 0;
+    z-index: 2;
+    transform: scale(1);
+    background: linear-gradient(#ff79da, #9356dc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    left: 80%;
+}
+.heart-purple:hover {
+    font-size: 27px;
+    cursor: pointer;
+    width: 6%;
+    transform: scale(1);
+    transition: 1s;
+    opacity: 1;
+    z-index: 2;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .under_title {
@@ -247,44 +265,47 @@ body {
 
 .price__entrance1 {
     display: flex;
-    width: 70px;
-    height: 70px;
-    transform: translateX(97px);
+    width: 20%;
+    height: 72px;
+    transform: translateX(70px);
     transition: 1s;
     align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
     justify-content: center;
-    padding: 5px;
-    line-height: 40px;
+    line-height: 56px;
+    position: absolute;
+    left: 61%;
 }
 
 .price__entrance2 {
     display: flex;
-    width: 70px;
-    height: 70px;
-    transform: translateX(97px);
+    width: 20%;
+    height: 72px;
+    transform: translateX(70px);
     transition: 1s;
     align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
     justify-content: center;
-    padding: 5px;
-    line-height: 40px;
+    line-height: 56px;
+    position: absolute;
+    left: 61%;
 }
 
 .price__entrance3 {
     display: flex;
-    width: 70px;
-    height: 70px;
-    transform: translateX(97px);
+    width: 20%;
+    height: 72px;
+    transform: translateX(70px);
     transition: 1s;
     align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
     justify-content: center;
-    padding: 5px;
-    line-height: 40px;
+    line-height: 56px;
+    position: absolute;
+    left: 61%;
 }
 
 /*container_entrance*/
@@ -344,6 +365,28 @@ body {
     animation: opacity3-menu cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
 
     transition: ease;
+}
+/* animation-text-overflow */
+.content_entrance1:hover .content__dish {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 1s;
+}
+.content_entrance2:hover .content__dish {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 1s;
+}
+.content_entrance3:hover .content__dish {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 1s;
 }
 
 /* animation-menu */
@@ -407,20 +450,39 @@ body {
     }
 }
 .content__dish {
-    width: 300px;
-    height: 26px;
+    width: 277px;
+    height: 33px;
     font-size: 17px;
     font-weight: 100;
     display: inline-block;
     font-family: "robotothin";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: width 1s;
+    line-height: 29px;
 }
 
 .content_plate1:hover .content__dish {
-    font-family: "robotothin";
+    width: 200px;
+    text-overflow: ellipsis;
     overflow: hidden;
-    text-overflow: ellipsis("...");
     white-space: nowrap;
-    display: inline-block;
+    transition: width 1s;
+}
+.content_plate2:hover .content__dish {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 1s;
+}
+.content_plate3:hover .content__dish {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 1s;
 }
 
 .content_entrance1 h4 {
@@ -548,44 +610,47 @@ body {
 
 .price__plate1 {
     display: flex;
-    width: 70px;
-    height: 70px;
-    transform: translateX(97px);
+    width: 20%;
+    height: 72px;
+    transform: translateX(70px);
     transition: 1s;
     align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
     justify-content: center;
-    padding: 5px;
-    line-height: 40px;
+    line-height: 56px;
+    position: absolute;
+    left: 61%;
 }
 
 .price__plate2 {
     display: flex;
-    width: 70px;
-    height: 70px;
-    transform: translateX(97px);
+    width: 20%;
+    height: 72px;
+    transform: translateX(70px);
     transition: 1s;
     align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
     justify-content: center;
-    padding: 5px;
-    line-height: 40px;
+    line-height: 56px;
+    position: absolute;
+    left: 61%;
 }
 
 .price__plate3 {
     display: flex;
-    width: 70px;
-    height: 70px;
-    transform: translateX(97px);
+    width: 20%;
+    height: 72px;
+    transform: translateX(70px);
     transition: 1s;
     align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
     justify-content: center;
-    padding: 5px;
-    line-height: 40px;
+    line-height: 56px;
+    position: absolute;
+    left: 61%;
 }
 
 /*anim-content_plate */
@@ -739,13 +804,34 @@ body {
     box-shadow: 0px 9px 16px 0px lightgray;
     padding-left: 15px;
     animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity1-dessert;
-
     transform: translateY(-10px);
-
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
     overflow: hidden;
+}
+
+/* animation-text-overflow */
+.content_dessert1:hover .content__dish {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 1s;
+}
+.content_dessert2:hover .content__dish {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 1s;
+}
+.content_dessert3:hover .content__dish {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 1s;
 }
 
 .content_dessert1 h4 {
@@ -771,16 +857,17 @@ body {
 
 .price__dessert1 {
     display: flex;
-    width: 70px;
-    height: 70px;
-    transform: translateX(97px);
+    width: 20%;
+    height: 72px;
+    transform: translateX(70px);
     transition: 1s;
     align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
     justify-content: center;
-    padding: 5px;
-    line-height: 40px;
+    line-height: 56px;
+    position: absolute;
+    left: 61%;
 }
 
 .content_dessert2 {
@@ -795,9 +882,7 @@ body {
     box-shadow: 0px 9px 16px 0px lightgray;
     padding-left: 15px;
     animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity2-dessert;
-
     transform: translateY(6px);
-
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -827,16 +912,17 @@ body {
 
 .price__dessert2 {
     display: flex;
-    width: 70px;
-    height: 70px;
-    transform: translateX(97px);
+    width: 20%;
+    height: 72px;
+    transform: translateX(70px);
     transition: 1s;
     align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
     justify-content: center;
-    padding: 5px;
-    line-height: 40px;
+    line-height: 56px;
+    position: absolute;
+    left: 61%;
 }
 
 .content_dessert3 {
@@ -851,9 +937,7 @@ body {
     box-shadow: 0px 9px 16px 0px lightgray;
     padding-left: 15px;
     animation: opacity3-dessert cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
-
     transform: translateY(21px);
-
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
@@ -883,16 +967,17 @@ body {
 
 .price__dessert3 {
     display: flex;
-    width: 70px;
-    height: 70px;
-    transform: translateX(97px);
+    width: 20%;
+    height: 72px;
+    transform: translateX(70px);
     transition: 1s;
     align-items: flex-end;
     font-family: "robotoregular";
     font-weight: bold;
     justify-content: center;
-    padding: 5px;
-    line-height: 40px;
+    line-height: 56px;
+    position: absolute;
+    left: 61%;
 }
 /*animation*/
 .content_dessert1:hover .price__dessert1 {
