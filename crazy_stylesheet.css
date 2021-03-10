@@ -112,12 +112,13 @@ body {
     cursor: pointer;
     width: 9%;
     position: absolute;
-    display: block;
+    display: inline-flex;
     opacity: 1;
     z-index: 1;
     transition: 400ms;
-    left: 80%;
-    top: 21px;
+    left: 83%;
+    top: 26px;
+    justify-content: center;
 }
 
 .heart-purple {
@@ -132,8 +133,10 @@ body {
     background: linear-gradient(#ff79da, #9356dc);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    left: 80%;
-    top: 21px;
+    left: 83%;
+    top: 26px;
+    display: inline-flex;
+    justify-content: center;
 }
 .heart-purple:hover {
     font-size: 27px;
@@ -145,7 +148,7 @@ body {
     z-index: 2;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    top: 21px;
+    top: 26px;
 }
 
 .under_title {
