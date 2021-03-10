@@ -102,7 +102,7 @@ body {
 
 .menu_title h1 {
     font-family: "shrikhandregular";
-    font-size: 30px;
+    font-size: 27px;
     font-weight: lighter;
     width: 79%;
 }
@@ -110,21 +110,22 @@ body {
 .heart-lite {
     font-size: 27px;
     cursor: pointer;
-    width: 6%;
+    width: 9%;
     position: absolute;
     display: block;
     opacity: 1;
     z-index: 1;
-    transition: 1s;
+    transition: 400ms;
     left: 80%;
+    top: 21px;
 }
 
 .heart-purple {
     font-size: 27px;
     cursor: pointer;
-    width: 6%;
+    width: 9%;
     position: absolute;
-    transition: 1s;
+    transition: 400ms;
     opacity: 0;
     z-index: 2;
     transform: scale(1);
@@ -132,17 +133,19 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     left: 80%;
+    top: 21px;
 }
 .heart-purple:hover {
     font-size: 27px;
     cursor: pointer;
-    width: 6%;
+    width: 9%;
     transform: scale(1);
-    transition: 1s;
+    transition: 400ms;
     opacity: 1;
     z-index: 2;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    top: 21px;
 }
 
 .under_title {
