@@ -49,6 +49,8 @@ Effets graphiques et animations;
 - Ils devront utiliser les animations ou transitions CSS, pas de JavaScript ni de librairie.
 
 ![image](https://user-images.githubusercontent.com/73250082/110791741-dc5e9200-8272-11eb-8e24-e31bfac2f911.png)
+![image](https://user-images.githubusercontent.com/73250082/110792340-8b9b6900-8273-11eb-999f-9f9b6f419667.png)
+
 
 
 
