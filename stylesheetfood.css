@@ -41,7 +41,7 @@ body {
     justify-content: center;
     align-items: end;
     position: absolute;
-    top: 157px;
+    top: 90px;
 }
 
 .content__loader {
@@ -68,7 +68,7 @@ body {
     border-radius: 50%;
     animation: loading 2500ms ease infinite;
     position: absolute;
-    bottom: 54%;
+    bottom: 465px;
 }
 
 .load-spin {
@@ -87,7 +87,7 @@ body {
     border-radius: 50%;
     animation: loading-reverse 2500ms linear infinite;
     position: absolute;
-    bottom: 52%;
+    bottom: 441px;
 }
 
 @keyframes loading {
