@@ -41,7 +41,7 @@ body {
     justify-content: center;
     align-items: end;
     position: absolute;
-    top: 90px;
+    top: 30px;
 }
 
 .content__loader {
