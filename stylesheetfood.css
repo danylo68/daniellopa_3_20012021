@@ -48,7 +48,11 @@ body {
     justify-content: center;
     align-items: end;
     position: absolute;
-    top: 30px;
+    top: 70px;
+}
+.content__ring {
+    height: 50%;
+    width: 100%;
 }
 
 .content__loader {
@@ -75,7 +79,7 @@ body {
     border-radius: 50%;
     animation: loading 2500ms ease infinite;
     position: absolute;
-    bottom: 465px;
+    top: 370px;
 }
 
 .load-spin {
@@ -94,7 +98,7 @@ body {
     border-radius: 50%;
     animation: loading-reverse 2500ms linear infinite;
     position: absolute;
-    bottom: 441px;
+    top: 345px;
 }
 
 @keyframes loading {
@@ -365,18 +369,17 @@ img {
     cursor: pointer;
     width: 10%;
     position: relative;
-    display: block;
     opacity: 1;
-    transition: 500ms;
+    transition: 400ms;
     display: inline-block;
 }
 
 .heart-purple {
     position: relative;
-    font-size: 23px;
+    font-size: 22px;
     cursor: pointer;
     width: 10%;
-    transition: 500ms;
+    transition: 400ms;
     opacity: 0;
     z-index: 1;
     background: linear-gradient(#ff79da, #9356dc);
@@ -391,13 +394,11 @@ img {
     cursor: pointer;
     width: 10%;
     transform: scale(1);
-    transition: 500ms;
+    transition: 400ms;
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    left: 74px;
-    display: inline-block;
 }
 
 .comment_title {

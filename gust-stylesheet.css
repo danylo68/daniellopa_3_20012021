@@ -118,30 +118,27 @@ a:visited {
     cursor: pointer;
     position: relative;
     opacity: 1;
-    z-index: 1;
+
     transition: 400ms;
-    display: inline-flex;
-    justify-content: center;
-    left: 4px;
+    display: inline-block;
 }
 
 .heart-purple {
-    font-size: 27px;
-    cursor: pointer;
     position: relative;
+    font-size: 24px;
+    cursor: pointer;
+    width: 10%;
     transition: 400ms;
     opacity: 0;
-    z-index: 2;
-    transform: scale(1);
+    z-index: 1;
     background: linear-gradient(#ff79da, #9356dc);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    display: inline-flex;
-    justify-content: center;
-    left: 31px;
+    left: 10%;
+    display: inline-block;
 }
 .heart-purple:hover {
-    font-size: 27px;
+    font-size: 24px;
     cursor: pointer;
     transform: scale(1);
     transition: 400ms;
@@ -149,7 +146,6 @@ a:visited {
     z-index: 2;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-}
 }
 
 .under_title {
