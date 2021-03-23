@@ -125,7 +125,7 @@ a:visited {
 
 .heart-purple {
     position: relative;
-    font-size: 22px;
+    font-size: 24px;
     cursor: pointer;
     width: 10%;
     transition: 400ms;
@@ -134,11 +134,11 @@ a:visited {
     background: linear-gradient(#ff79da, #9356dc);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    left: 39px;
+    left: 10%;
     display: inline-block;
 }
 .heart-purple:hover {
-    font-size: 22px;
+    font-size: 24px;
     cursor: pointer;
     transform: scale(1);
     transition: 400ms;
