@@ -972,9 +972,10 @@ ul li {
     align-items: center;
     justify-content: space-between;
 }
-a:link {
+.food__contact:link {
     display: contents;
     color: white;
+    text-decoration: none;
 }
 .proposition {
     margin-left: 14px;

@@ -297,7 +297,7 @@ a:visited {
     flex-wrap: wrap;
     cursor: pointer;
     overflow: hidden;
-    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity1-menu;
+    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity1-menu;
 }
 .content_entrance2 {
     width: 100%;
@@ -315,7 +315,7 @@ a:visited {
     flex-wrap: wrap;
     cursor: pointer;
     overflow: hidden;
-    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity2-menu;
+    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity2-menu;
 }
 .content_entrance3 {
     width: 100%;
@@ -481,7 +481,7 @@ a:visited {
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
     padding-left: 15px;
-    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity1-plate;
+    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity1-plate;
     animation-duration: 1s;
     transform: translateY(-6px);
     transition: ease;
@@ -501,7 +501,7 @@ a:visited {
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
     padding-left: 15px;
-    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity2-plate;
+    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity2-plate;
     transform: translateY(10px);
     transition: ease;
     position: relative;
@@ -695,7 +695,7 @@ a:visited {
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
     padding-left: 15px;
-    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity1-dessert;
+    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity1-dessert;
     transform: translateY(-10px);
     position: relative;
     flex-wrap: wrap;
@@ -750,7 +750,7 @@ a:visited {
     line-height: 0px;
     box-shadow: 0px 9px 16px 0px lightgray;
     padding-left: 15px;
-    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) 0ms 1 normal none running opacity2-dessert;
+    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity2-dessert;
 
     transform: translateY(6px);
 
@@ -976,9 +976,10 @@ ul li {
     align-items: center;
     justify-content: space-between;
 }
-a:link {
+.food__contact:link {
     display: contents;
     color: white;
+    text-decoration: none;
 }
 .proposition {
     margin-left: 14px;
