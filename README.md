@@ -48,7 +48,9 @@ Effets graphiques et animations;
 - Les effets accessibles au clic ou au survol sont visibles sur la maquette.
 - Ils devront utiliser les animations ou transitions CSS, pas de JavaScript ni de librairie.
 
-![image](https://user-images.githubusercontent.com/73250082/110792550-d87f3f80-8273-11eb-91a0-60db0d56492c.png)
+![Capture d’écran 2021-03-24 à 21 36 07](https://user-images.githubusercontent.com/73250082/112380027-2a4ead80-8ce9-11eb-8510-577b9449a104.png)
+
+
 
 
 
