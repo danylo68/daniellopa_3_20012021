@@ -509,6 +509,11 @@ ul li {
     align-items: center;
     justify-content: space-between;
 }
+
+a:link {
+    display: contents;
+    color: white;
+}
 .proposition {
     margin-left: 14px;
 }
