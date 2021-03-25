@@ -212,7 +212,7 @@ img {
     border-radius: 30px;
     width: 71%;
     height: 51px;
-    box-shadow: 5px 7px 11px 5px grey;
+    box-shadow: 5px 7px 11px 5px lightgrey;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -228,7 +228,7 @@ img {
     border-radius: 30px;
     width: 71%;
     height: 51px;
-    box-shadow: 5px 7px 11px 5px lightgrey;
+    box-shadow: 5px 7px 11px 5px grey;
     margin: auto;
     align-items: center;
     justify-content: center;
